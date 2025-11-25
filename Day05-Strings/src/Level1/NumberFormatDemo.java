@@ -8,16 +8,16 @@ public class NumberFormatDemo {
         }
         public static void handleException(String text) {
             try {
-                System.out.println("Attempting to parse text into a number safely...");
+              
 
                 int number = Integer.parseInt(text);
 
                 System.out.println("Parsed Number: " + number);
 
             } catch (NumberFormatException e) {
-
                 System.out.println("Caught NumberFormatException!");
                 System.out.println("Error Message: " + e.getMessage());
+                    
             } catch (RuntimeException e) {
 
                 System.out.println("Caught a generic RuntimeException!");
